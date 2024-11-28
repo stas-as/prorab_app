@@ -23,8 +23,6 @@ app.include_router(auth.router)
 app.include_router(categories.router)
 app.include_router(tickets.router)
 
-# MetaData.create_all(engine)
-# model_file.Base.metadata.create_all(bind=engine)
 
 # alembic init async migrations
 # alembic revision --autogenerate -m "Initial migration"

@@ -28,12 +28,3 @@ def create_category(category: CategoryCreate, db: Session = Depends(get_db)):
     return db_category
 
 
-# # Эндпоинт создания категории
-# @app.post("/categories/add/", response_model=CategoryResponse)
-# def create_category(category: CategoryCreate, db: Session = Depends(get_db)):
-#     db_category = Category(name=category.name, description=category.description)
-#     db.add(db_category)
-#     db.commit()
-#     db.refresh(db_category)
-#     return db_category
-
